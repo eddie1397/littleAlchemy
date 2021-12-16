@@ -33,11 +33,13 @@ const air = new Element('Air');
 const instructions = document.querySelector('.hover_nav');
 instructions.addEventListener("mouseover", () => {
   const instructionsText = document.querySelector('#instructions-text');
-  instructionsText.style.display = 'block';
+  instructionsText.style.opacity = "100%";
+
 })
 instructions.addEventListener("mouseleave", () => {
   const instructionsText = document.querySelector('#instructions-text');
-  instructionsText.style.display = 'none';
+  instructionsText.style.opacity = "0%";
+
 })
 
 
@@ -46,11 +48,12 @@ instructions.addEventListener("mouseleave", () => {
 const ideas = document.querySelector('#ideas');
 ideas.addEventListener("mouseover", () => {
   const ideaslist = document.querySelector('#ideaslist');
-  ideaslist.style.display = 'block';
+  ideaslist.style.opacity = '100%';
 })
 ideas.addEventListener("mouseleave", () => {
-  const ideas = document.querySelector('#ideaslist');
-  ideas.style.display = 'none';
+  const ideaslist = document.querySelector('#ideaslist');
+  ideaslist.style.opacity = '0%';
+
 })
 
 
@@ -59,12 +62,28 @@ ideas.addEventListener("mouseleave", () => {
 //HINTS
 const hints = document.querySelector('#hints');
 hints.addEventListener("mouseover", () => {
-  alert(itemsLeft);
+
+  const oldItems = document.querySelectorAll('.hintItems');
+  console.log(oldItems);
+  for (let item of oldItems){
+    item.remove();
+  }
+    itemsLeft.forEach((element, i) => {
+      console.log(itemsLeft[i]);
+        const listItem = document.createElement('li');
+        listItem.innerText = itemsLeft[i];
+        listItem.className = "hintItems"
+        const hintUnorderedList = document.querySelector('#hintlist');
+        hintUnorderedList.append(listItem);
+        hintUnorderedList.style.opacity = "100%";
+        console.log(hintUnorderedList);
+  });
 })
-// ideas.addEventListener("mouseleave", () => {
-//   const ideas = document.querySelector('#ideaslist');
-//   ideas.style.display = 'none';
-// })
+
+hints.addEventListener("mouseleave", () => {
+  const hints = document.querySelector('#hintlist');
+  hints.style.opacity = '0%';
+})
 
 
 
