@@ -1,7 +1,7 @@
 console.log('Little Alchemy Clone');
 
 const createdElements = [];
-const itemsLeft = ["Water", "Fire", "Earth", "Steam", "Air", "Stone", "Mud", 'Mist', 'Smoke', 'Dust', 'Metal', 'Land', 'Chimney', 'Clay', 'Brick', "Sand" ];
+const itemsLeft = ["Steam", "Stone", "Mud", 'Mist', 'Smoke', 'Dust', 'Metal', 'Land', 'Chimney', 'Clay', 'Brick', "Sand" ];
 
 //Class for all the elements
 class Element {
@@ -28,10 +28,44 @@ const fire = new Element('Fire');
 const earth = new Element('Earth');
 const air = new Element('Air');
 
+// DISPLAYS FOR THE NAVBAR
+//Instructions
+const instructions = document.querySelector('.hover_nav');
+instructions.addEventListener("mouseover", () => {
+  const instructionsText = document.querySelector('#instructions-text');
+  instructionsText.style.display = 'block';
+})
+instructions.addEventListener("mouseleave", () => {
+  const instructionsText = document.querySelector('#instructions-text');
+  instructionsText.style.display = 'none';
+})
 
 
-// Array of objects that contain the key value pairs of the elements combinations along with
-// the result key value pair.
+
+//IDEAS
+const ideas = document.querySelector('#ideas');
+ideas.addEventListener("mouseover", () => {
+  const ideaslist = document.querySelector('#ideaslist');
+  ideaslist.style.display = 'block';
+})
+ideas.addEventListener("mouseleave", () => {
+  const ideas = document.querySelector('#ideaslist');
+  ideas.style.display = 'none';
+})
+
+
+
+
+//HINTS
+const hints = document.querySelector('#hints');
+hints.addEventListener("mouseover", () => {
+  alert(itemsLeft);
+})
+// ideas.addEventListener("mouseleave", () => {
+//   const ideas = document.querySelector('#ideaslist');
+//   ideas.style.display = 'none';
+// })
+
 
 
 

@@ -14,20 +14,12 @@ img {
 .game-title {
     color: #BE4747;
     padding: 10px;
-
-
-
 }
 
 .container {
   display: flex;
   height:845px;
-  padding: 10px;
-
-}
-
-
-#created-elements {
+  padding:;
 
 }
 
@@ -37,7 +29,7 @@ img {
     align-items: flex-start;
     border: 3px solid #6286FA;
     border-radius: 15px;
-    padding: 10px;
+     padding: 10px;
     color: #BE4747;
     text-align: center;
     flex-wrap: nowrap;
@@ -74,6 +66,28 @@ img {
 
 }
 
+
+#instructions-text {
+  position: absolute;
+  width: 400px;
+  height: 350px;
+  top: 90px;
+  right: 50px;
+  background-color: lavender;
+  transition: opacity 2s;
+  display: none;
+}
+
+#ideaslist {
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    top: 90px;
+    right: 50px;
+    display: none;
+
+}
+
 #first-element {
   background-color: #E6E6E6;
   color: #6286FA;
@@ -103,10 +117,63 @@ img {
 
 #extend-created-elements {
   width: 366px;
+  background-color: #E6E6E6;
+  border: 2px solid #6286FA;
+  border-radius: 6px;
+  padding: 5px;
+
 }
 
 
+/* NAVBAR STYLING */
+#hints{
+  color: #E6E6E6;
+}
 
+#hints:hover{
+  color: #6286FA;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #E6E6E6;
+  border-radius: 6px;
+  border: 3px solid #6286FA;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #BE4747;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+.hover_nav:hover {
+  background-color: #E6E6E6;
+  display: block;
+  color: #6286FA;
+}
+
+.active {
+  color: #BE4747;
+  font-size: ;
+}
+ /* TOOLTIPS */
+
+/* .hover_nav:hover:before {
+  content: attr(data-tooltip);
+
+} */
 
 
 

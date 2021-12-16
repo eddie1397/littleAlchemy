@@ -6,7 +6,13 @@
     <title> Little Alchemy </title>
   </head>
   <body>
-      <h1 class="game-title">Little Alchemy </h1>
+      <!-- <h1 class="game-title">Little Alchemy </h1> -->
+      <ul>
+          <li><a class="active" href="#home">Little Alchemy</a></li>
+          <li style="float:right"><a id='instructions-buton' class="hover_nav" href="#news" data-tooltip="Loren Ipsum">Instructions</a></li>
+          <li style="float:right"><a id="ideas"class="hover_nav" href="#contact">Ideas</a></li>
+          <li style="float:right"><a id="hints" class="hover_nav" href="#about">Hints</a></li>
+      </ul>
 
 
 <div class="container">
@@ -110,6 +116,35 @@
     </div>
 
     <div class="form1">
+      <p id='instructions-text' class="lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+         tempor incididunt ut labore et dolore magna aliqua. Mauris pharetra et
+         ultrices neque ornare aenean euismod elementum nisi. Sit amet nulla fac
+         ilisi morbi tempus iaculis urna id. Eget magna fermentum iaculis eu. Co
+         mmodo elit at imperdiet dui accumsan sit. Amet nulla facilisi morbi tem
+         pus iaculis urna id. Tristique sollicitudin nibh sit amet commodo nulla
+         facilisi nullam. Amet volutpat consequat mauris nunc congue nisi vitae
+         suscipit. Euismod elementum nisi quis eleifend. Egestas dui id ornare
+         arcu odio ut sem. Nisl purus in mollis nunc sed. Etiam non quam lacu
+         s suspendisse faucibus. Nunc scelerisque viverra mauris in aliquam.
+         Praesent elementum facilisis leo vel fringilla. Tristique senectus et netus et.</p>
+
+
+         <ul id="ideaslist">
+           <li>Fire + Water = Steam</li>
+           <li>Water + Earth = Mud</li>
+           <li>Earth + Fire = Stone</li>
+         </ul>
+
+
+
+         <!-- <ul id="hintlist">
+           <li>Fire + Water = Steam</li>
+           <li>Water + Earth = Mud</li>
+           <li>Earth + Fire = Stone</li>
+         </ul>
+ -->
+
+
       <form class="" onSubmit="combine(event)">
         <input id="first-element" type="text" name="firstelement" placeholder="Enter your first Element.">
         <input id="submit-button" type="submit" placeholder=""="Combine Elements">
