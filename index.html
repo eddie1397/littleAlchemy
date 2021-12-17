@@ -1,167 +1,175 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" href="css/style.css">
-    <meta charset="utf-8">
-    <title> Little Alchemy </title>
-  </head>
-  <body>
-      <!-- <h1 class="game-title">Little Alchemy </h1> -->
-      <ul>
-          <li><a id="logo"class="active" href="#home"><strong>Little Alchemy</strong></a></li>
-          <li style="float:right"><a id='instructions-buton' class="hover_nav" href="#news" data-tooltip="Loren Ipsum">Instructions</a></li>
-          <li style="float:right"><a id="ideas"class="hover_nav" href="#contact">Ideas</a></li>
-          <li style="float:right"><a id="hints" class="hover_nav" href="#about">Hints</a></li>
-      </ul>
+    <head>
+        <link rel="stylesheet" href="css/style.css" />
+        <meta charset="utf-8" />
+        <title>Little Alchemy</title>
+    </head>
+    <body>
+        <!-- <h1 class="game-title">Little Alchemy </h1> -->
+        <ul>
+            <li>
+                <a id="logo" class="active" href="#home"
+                    ><strong>Little Alchemy</strong></a
+                >
+            </li>
+            <li style="float: right">
+                <a
+                    id="instructions-buton"
+                    class="hover_nav"
+                    href="#news"
+                    data-tooltip="Loren Ipsum"
+                    >Instructions</a
+                >
+            </li>
+            <li style="float: right">
+                <a id="ideas" class="hover_nav" href="#contact">Ideas</a>
+            </li>
+            <li style="float: right">
+                <a id="hints" class="hover_nav" href="#about">Hints</a>
+            </li>
+        </ul>
 
+        <div class="container">
+            <div class="created-elements-box">
+                <h3 id="extend-created-elements">Created Elements:</h3>
+                <div id="created-elements" class="created-elements">
+                    <!-- <p>This is where I will store all of the Created Elements</p> -->
 
-<div class="container">
+                    <div id="Air">
+                        <img src="images/Icons/Air.png" alt="Air" />
+                        <p id="image-text">Air</p>
+                    </div>
 
-    <div class="created-elements-box">
-      <h3 id="extend-created-elements" >Created Elements: </h3>
-          <div id="created-elements" class="created-elements">
-            <!-- <p>This is where I will store all of the Created Elements</p> -->
+                    <div id="Fire">
+                        <img src="images/Icons/Fire.png" alt="Fire" />
+                        <p id="image-text">Fire</p>
+                    </div>
 
-                  <div id ="Air">
-                    <img src="images/Icons/Air.png" alt="Air">
-                    <p id="image-text">Air</p>
-                  </div>
+                    <div id="Earth">
+                        <img src="images/Icons/Earth.png" alt="Earth" />
+                        <p id="image-text">Earth</p>
+                    </div>
 
-                  <div id ="Fire">
-                    <img src="images/Icons/Fire.png" alt="Fire">
-                    <p id="image-text">Fire</p>
-                  </div>
+                    <div id="Water">
+                        <img src="images/Icons/Water.png" alt="Water" />
+                        <p id="image-text">Water</p>
+                    </div>
 
-                  <div id ="Earth">
-                    <img src="images/Icons/Earth.png" alt="Earth">
-                    <p id="image-text">Earth</p>
-                  </div>
+                    <div id="Steam" class="">
+                        <img src="images/Icons/Steam.png" alt="Steam" />
+                        <p id="image-text">Steam</p>
+                    </div>
 
-                  <div id ="Water">
-                    <img src="images/Icons/Water.png" alt="Water">
-                    <p id="image-text">Water</p>
-                  </div>
+                    <div id="Mud" class="">
+                        <img src="images/Icons/Mud.png" alt="Mud" />
+                        <p id="image-text">Mud</p>
+                    </div>
 
-                  <div id="Steam" class="">
-                    <img src="images/Icons/Steam.png" alt="Steam">
-                    <p id="image-text">Steam</p>
-                  </div>
+                    <div id="Mist" class="">
+                        <img src="images/Icons/Mist.png" alt="Mist" />
+                        <p id="image-text">Mist</p>
+                    </div>
 
+                    <div id="Dust" class="">
+                        <img src="images/Icons/Dust.png" alt="Dust" />
+                        <p id="image-text">Dust</p>
+                    </div>
 
-                  <div id="Mud" class="">
-                    <img src="images/Icons/Mud.png" alt="Mud">
-                    <p id="image-text">Mud</p>
-                  </div>
+                    <div id="Smoke" class="">
+                        <img src="images/Icons/Smoke.png" alt="Smoke" />
+                        <p id="image-text">Smoke</p>
+                    </div>
 
-                  <div id="Mist" class="">
-                    <img src="images/Icons/Mist.png" alt="Mist">
-                    <p id="image-text">Mist</p>
-                  </div>
+                    <div id="Stone" class="">
+                        <img src="images/Icons/Stone.png" alt="Stone" />
+                        <p id="image-text">Stone</p>
+                    </div>
 
-                  <div id="Dust" class="">
-                    <img src="images/Icons/Dust.png" alt="Dust">
-                    <p id="image-text">Dust</p>
-                  </div>
+                    <div id="Metal" class="">
+                        <img src="images/Icons/Metal.png" alt="Metal" />
+                        <p id="image-text">Metal</p>
+                    </div>
 
+                    <div id="Land" class="">
+                        <img src="images/Icons/Land.png" alt="Land" />
+                        <p id="image-text">Land</p>
+                    </div>
 
-                  <div id="Smoke" class="">
-                    <img src="images/Icons/Smoke.png" alt="Smoke">
-                    <p id="image-text">Smoke</p>
-                  </div>
+                    <div id="Sand" class="">
+                        <img src="images/Icons/Sand.png" alt="Sand" />
+                        <p id="image-text">Sand</p>
+                    </div>
 
+                    <div id="Chimney" class="">
+                        <img src="images/Icons/Chimney.png" alt="Chimney" />
+                        <p id="image-text">Chimney</p>
+                    </div>
 
-                  <div id="Stone" class="">
-                    <img src="images/Icons/Stone.png" alt="Stone">
-                    <p id="image-text">Stone</p>
-                  </div>
+                    <div id="Clay" class="">
+                        <img src="images/Icons/Clay.png" alt="Clay" />
+                        <p id="image-text">Clay</p>
+                    </div>
 
+                    <div id="Brick" class="">
+                        <img src="images/Icons/Brick.png" alt="Brick" />
+                        <p id="image-text">Brick</p>
+                    </div>
+                </div>
+            </div>
 
-                  <div id="Metal" class="">
-                    <img src="images/Icons/Metal.png" alt="Metal">
-                    <p id="image-text">Metal</p>
-                  </div>
+            <div class="form1">
+                <p id="instructions-text" class="lorem-text">
+                    Hello, Welcome to my game, the rules are pretty simple. take
+                    each element tht you find in the created elements tab and
+                    combine them with other elements to create endless
+                    possibilities.
+                    <br />
+                    There might be a hidden secret if you can figure it out 😏.
+                    <br />
+                    Good luck and Happy Playing!
+                </p>
 
+                <ul id="ideaslist">
+                    <li>Fire + Water = Steam</li>
+                    <li>Water + Earth = Mud</li>
+                    <li>Earth + Fire = Stone</li>
+                    <li>Air + Water = Mist</li>
+                    <li>Air + Fire = Smoke</li>
+                    <li>Earth + Air = Dust</li>
+                    <li>Stone + Fire = Metal</li>
+                    <li>Earth + Stone = Land</li>
+                    <li>Smoke + Stone = Chimney</li>
+                    <li>Mud + Stone = Clay</li>
+                    <li>Mud + Fire = Brick</li>
+                    <li>Stone + Air = Sand</li>
+                </ul>
 
-                  <div id="Land" class="">
-                    <img src="images/Icons/Land.png" alt="Land">
-                    <p id="image-text">Land</p>
-                  </div>
+                <ul id="hintlist"></ul>
 
+                <form class="" onSubmit="combine(event)">
+                    <input
+                        id="first-element"
+                        type="text"
+                        name="firstelement"
+                        placeholder="Enter your first Element."
+                    />
+                    <input
+                        id="submit-button"
+                        type="submit"
+                        placeholder=""
+                        ="Combine Elements"
+                    />
+                    <input
+                        id="second-element"
+                        type="text"
+                        name="secondelement"
+                        placeholder="Enter your second Element."
+                    />
+                </form>
+            </div>
+        </div>
 
-                  <div id="Sand" class="">
-                    <img src="images/Icons/Sand.png" alt="Sand">
-                    <p id="image-text">Sand</p>
-                  </div>
-
-
-                  <div id="Chimney" class="">
-                    <img src="images/Icons/Chimney.png" alt="Chimney">
-                    <p id="image-text">Chimney</p>
-                  </div>
-
-
-                  <div id="Clay" class="">
-                    <img src="images/Icons/Clay.png" alt="Clay">
-                    <p id="image-text">Clay</p>
-                  </div>
-
-
-                  <div id="Brick" class="">
-                    <img src="images/Icons/Brick.png" alt="Brick">
-                    <p id="image-text">Brick</p>
-                  </div>
-
-          </div>
-
-    </div>
-
-    <div class="form1">
-      <p id='instructions-text' class="lorem-text">Hello, Welcome to my game, the rules are pretty simple.
-      take each element tht you find in the created elements tab and combine them with other elements to create endless possibilities.
-      <br>
-      There might be a hidden secret if you can figure it out 😏.
-      <br>
-      Good luck and Happy Playing!</p>
-
-
-         <ul id="ideaslist">
-           <li> Fire + Water = Steam </li>
-           <li> Water + Earth = Mud </li>
-           <li> Earth + Fire = Stone </li>
-           <li> Air + Water = Mist </li>
-           <li> Air + Fire = Smoke </li>
-           <li> Earth + Air = Dust </li>
-           <li> Stone + Fire = Metal </li>
-           <li> Earth + Stone = Land </li>
-           <li> Smoke + Stone = Chimney </li>
-           <li> Mud + Stone = Clay </li>
-           <li> Mud + Fire = Brick </li>
-           <li> Stone + Air = Sand </li>
-         </ul>
-
-
-
-          <ul id="hintlist">
-         </ul>
-
-
-
-      <form class="" onSubmit="combine(event)">
-        <input id="first-element" type="text" name="firstelement" placeholder="Enter your first Element.">
-        <input id="submit-button" type="submit" placeholder=""="Combine Elements">
-        <input id="second-element" type="text" name="secondelement" placeholder="Enter your second Element.">
-      </form>
-    </div>
-
-
-
-</div>
-
-
-
-
-
-
-     <script src="js/app.js" charset="utf-8"></script>
-  </body>
+        <script src="js/app.js" charset="utf-8"></script>
+    </body>
 </html>
